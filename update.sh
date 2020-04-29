@@ -2,7 +2,7 @@
 #FreeDNS updater script
 
 UPDATEURL="http://freedns.afraid.org/dynamic/update.php?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-DOMAIN="paranutti.mooo.com"
+DOMAIN="YOUR_DOMAIN_HERE"
 
 registered=$(nslookup $DOMAIN|tail -n2|grep A|sed s/[^0-9.]//g)
 
